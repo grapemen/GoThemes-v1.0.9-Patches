@@ -1,0 +1,328 @@
+<html><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <title>Videomaker - GoThemes</title>
+    <meta name="description" content="GoThemes's Video List">
+    <link rel="stylesheet" type="text/css" href="/pages/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/pages/css/create.css">
+    <script src="/pages/js/jquery.js"></script>
+    <script src="/pages/js/global.js"></script>
+	<style>
+.container {
+  overflow-y: scroll;
+  height:700px; position: relative;
+}
+.center {
+  color: purple;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.center2 {
+  color: red;
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+.center3 {
+  color: white;
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+.make-a-video {
+  position: absolute;
+  bottom: 390px;
+  left: 425px;
+  font-size: 20px;
+}
+.make-a-char {
+  position: absolute;
+  bottom: 390px;
+  left: 570px;
+  font-size: 20px;
+}
+.tutorial-video {
+  position: absolute;
+  bottom: 300px;
+  left: 635px;
+  font-size: 20px;
+}</style>
+  </head>
+
+  <body>
+    <%~ includeFile("./includes/header", { env: it.env }) %>
+
+<div class="container">
+<img src="Untitled.png" alt="Cinque Terre" width="1420" height="auto">
+<div class="center">The Galaxy Videomaker From GoThemes!</div>
+<div class="center2">Comedy World</div>
+<div class="center3">The Most Loved Theme Of GoAnimate
+Also Known As The "Grounded" Theme</div>
+<div class="make-a-video">
+<a href="/go_full?tray=custom">Make A Video</a>
+</div>
+<div class="make-a-char">
+<a href="/cc_browser?themeId=family">Make A Character</a>
+</div>
+    			<h1>Select a theme</h1>
+
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('custom', 'family')">
+					<img src="/pages/img/themes/custom.webp" alt="Comedy World">
+					Comedy World
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('action', 'cc2')">
+					<img src="/pages/img/themes/action.webp" alt="Lil' Peepz">
+					Lil' Peepz
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('retro')">
+					<img src="/pages/img/themes/retro.webp" alt="Cartoon Classics">
+					Cartoon Classics
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('politics2')">
+					<img src="/pages/img/themes/politics2.webp" alt="White Houserz">
+					White Houserz
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('stick')">
+					<img src="/pages/img/themes/stick.webp" alt="Stick Figure">
+					Stick Figure
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('anime', 'anime')">
+					<img src="/pages/img/themes/anime.webp" alt="Anime">
+					Anime
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('ninjaanime', 'ninjaanime')">
+					<img src="/pages/img/themes/ninjaanime.webp" alt="Ninja Anime">
+					Ninja Anime
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('spacecitizen', 'spacecitizen')">
+					<img src="/pages/img/themes/spacecitizen.webp" alt="Space Citizens">
+					Space Citizens
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('chibi', 'chibi')">
+					<img src="/pages/img/themes/chibi.webp" alt="Chibi Peepz">
+					Chibi Peepz
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('ninja', 'ninja')">
+					<img src="/pages/img/themes/ninja.webp" alt="Chibi Ninjas">
+					Chibi Ninjas
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('animal', 'cc2')">
+					<img src="/pages/img/themes/animal.webp" alt="Lil' Petz World">
+					Lil' Petz World
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('space', 'cc2')">
+					<img src="/pages/img/themes/space.webp" alt="Space Peepz">
+					Space Peepz
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('fullenergy')">
+					<img src="/pages/img/themes/fullenergy.webp" alt="Full Energy">
+					<div>Full Energy</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('politic')">
+					<img src="/pages/img/themes/politic.webp" alt="Politics &amp; Celebrity">
+					<div>Politics &amp; Celebrity</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('christmas')">
+					<img src="/pages/img/themes/christmas.webp" alt="Holiday &amp; Seasonal">
+					<div>Holiday &amp; Seasonal</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('monstermsh')">
+					<img src="/pages/img/themes/monstermsh.webp" alt="Monsters Mayhem">
+					<div>Monsters Mayhem</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('akon')">
+					<img src="/pages/img/themes/akon.webp" alt="AKON™">
+					AKON™
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('ben10')">
+					<img src="/pages/img/themes/ben10.webp" alt="Ben 10™">
+					Ben 10™
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('botdf', 'cc2')">
+					<img src="/pages/img/themes/botdf.webp" alt="Blood on the Dance Floor™">
+					<div>Blood on the Dance Floor™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('bunny')">
+					<img src="/pages/img/themes/bunny.webp" alt="It's Happy Bunny™">
+					<div>It's Happy Bunny™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('chowder')">
+					<img src="/pages/img/themes/chowder.webp" alt="Chowder™">
+					<div>Chowder™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('domo')">
+					<img src="/pages/img/themes/domo.webp" alt="Domo™">
+					<div>Domo™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('monkeytalk')">
+					<img src="/pages/img/themes/monkeytalk.webp" alt="SuperRica &amp; Rashy™">
+					<div>SuperRica &amp; Rashy™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('sf')">
+					<img src="/pages/img/themes/sf.webp" alt="Street Fighter™">
+					<div>Street Fighter™</div>
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('startrek')">
+					<img src="/pages/img/themes/startrek.webp" alt="Star Trek™ Quogs">
+					<div>Star Trek™ Quogs</div>
+				</a>
+			</div>
+			<div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('toonadv', 'cctoonadventure')">
+					<img src="/pages/img/themes/toonadv.webp" alt="Toon Adventure™">
+					Toon Adventure™
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('underdog')">
+					<img src="/pages/img/themes/underdog.webp" alt="Underdog™">
+					Underdog™
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('willie')">
+					<img src="/pages/img/themes/willie.webp" alt="Willie Nelson™">
+					Willie Nelson™
+				</a>
+			</div>
+                        <div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('business', 'business')">
+					<img src="https://dominicjennings.github.io/static/477/go/img/videomaker/themes/Business_Friendly.jpg" alt="The Theme">
+					Business Friendly
+				</a>
+			</div>
+                        <div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('whiteboard', 'whiteboard')">
+					<img src="https://dominicjennings.github.io/static/477/go/img/videomaker/themes/Whiteboard_Animation.jpg" alt="The Theme">
+					Whiteboard Animation
+				</a>
+			</div>
+                        <div class="theme" data-has-cc="">
+				<a href="#" onclick="redirect('infographics', 'infographics')">
+					<img src="https://d78kyy4zykbazi.archive.ph/6Ima4/8b471babf34a8d2ef9f1a414ae7ed407c2ddf6a3.jpg" alt="The Theme">
+					Video Infographics
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('sticklybiz')">
+					<img src="https://dominicjennings.github.io/static/477/go/img/videomaker/themes/Stickly_Business.jpg" alt="Stickly Business">
+					Stickly Business
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('bizmodels')">
+					<img src="https://dominicjennings.github.io/static/477/go/img/videomaker/themes/Business_Models.jpg" alt="Business Models">
+					Business Models
+				</a>
+			</div>
+			<div class="theme">
+				<a href="#" onclick="redirect('commoncraft')">
+					<img src="https://dominicjennings.github.io/static/477/go/img/videomaker/themes/Commoncraft.jpg" alt="Common Craft">
+					Common Craft
+				</a>
+			</div>
+			<div id="char-copy" style="display: none;">
+				<h2>Copy a character</h2>
+				<p>Have a character ID? Use it here!</p>
+				<input type="text" value="400001035" name="char-id">
+				<a href="#" onclick="copyRedirect()">Copy</a>
+			</div>
+			<form>
+     <input id="importer-files" type="file" name="file" title="Upload Files" accept=".mp3,.wav,.ogg,.wma,.swf,.gif,.png,.jpg,.mp4" style="display:none">
+</form>
+		
+
+</div>
+
+
+
+<form enctype="multipart/form-data" action="/api/char/upload" method="post">
+	<input id="file" type="file" onchange="this.form.submit()" name="import">
+</form>
+
+  <%~ includeFile("./includes/footer", { env: it.env }) %>
+
+<script>
+		const charId = $("input[name='char-id']");
+
+		// filter the list
+		const params = new URLSearchParams(window.location.search);
+		// default to all themes
+		const filter = params.get("filter") || "vl";
+		if (filter == "cc")
+			$(".theme").not("[data-has-cc]").hide();
+		else
+			$("#char-copy").hide();
+
+		function redirect(tId, ccId = false) {
+			if (filter == "cc") {
+				window.location.href = `./cc_browser?themeId=${ccId}`;
+				return;
+			}
+			window.location.href = `./go_full?tray=${tId}`;
+		}
+		function copyRedirect() {
+			const id = charId.val();
+			window.location.href = `./cc?original_asset_id=${id}`;
+		}
+
+	</script>
+
+  
+</body></html>

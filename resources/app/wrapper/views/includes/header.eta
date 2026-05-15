@@ -1,0 +1,17 @@
+<header>
+	<a href="/">
+		<h1 style="margin:0"><img id="logo" src="https://grapemen.github.io/gtlogo.png" alt="logo"/></h1>
+	</a>
+	<nav id="headbuttons">
+		<a href="https://github.com/GoExport/GoExport/releases/latest/download/goexport_win_installer_amd64.exe" class="button_small">GOEXPORT</a>
+		<a href="/go_full?tray=custom&tutorial=1" class="button_small">TUTORIAL</a>
+		<a href="https://grapzmen-goanimation.github.io/wrappershopremastered.html" class="button_mid">SHOP</a>
+		<a class="button_mid" onclick="document.getElementById('file').click()">UPLOAD A CC</a>
+		<a href="/create?filter=cc" class="button_big">CREATE A CC</a>
+		<a href="/create" class="button_big">MAKE A VIDEO</a>
+	</nav>
+</header>
+
+<form enctype='multipart/form-data' action='/api/char/upload' method='post'>
+	<input id='file' type="file" onchange="this.form.submit()" name='import' />
+</form>
