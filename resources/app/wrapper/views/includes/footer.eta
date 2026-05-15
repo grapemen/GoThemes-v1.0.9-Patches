@@ -2,6 +2,7 @@
 	<nav id="foot-left">
 		<a>v<%= it.env.WRAPPER_VER %></a>
 		<a href="/settings">Settings</a>
+		<a href="https://gothemes.replit.app/v1.0.9.html">Check For New Versions</a>
 		<a href="https://reddit.com/r/GoThemesCentral">Central</a>
 	</nav>
 
