@@ -1,1 +1,73 @@
+<html class="light"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <title>Animation - GoThemes</title>
+    <meta name="description" content="anim">
+    <link rel="stylesheet" type="text/css" href="/pages/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/pages/css/list.css">
+    <script src="/pages/js/jquery.js"></script>
+    <script src="/pages/js/global.js"></script>
+  </head>
 
+  <body>
+<%~ includeFile("./includes/header", { env: it.env }) %>    <iframe id="videoFrame" src="" width="1450%" height="800"></iframe>
+
+    
+
+    <div class="settings privacy public hidden-xs">
+        <div class="container">
+            <div class="row settings-row">
+                <div class="col-sm-9">
+                    
+                    
+                    
+                    <div class="using-public"><span class="icon glyph-pro glyph-unlock inline"></span>Private</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="autosave-overlay">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings headline">
+        <div class="container">
+            <div class="settings-row">
+            <h1 class="video-title visible-xs">Your Animation</h1>
+            <div id="pencil"><p>Created by <a href="" title="Dhar Mann">You</a></p></div>
+            <p><a id="exportVideo169" href="">Export: 16:9</a></p>
+	    <p><a id="exportVideo149" href="">Export: 14:9</a></p>
+        </div>
+        </div>
+    </div>
+
+<%~ includeFile("./includes/footer", { env: it.env }) %>
+    <script>
+        (function() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const videoId2 = params.get("v");
+				
+                const safeVideoId = encodeURIComponent(videoId2);
+				
+                const embedUrl = `http://localhost:4343/player?movieId=${safeVideoId}`;
+				
+                document.getElementById("videoFrame").src = `http://localhost:4343/player?movieId=${safeVideoId}`;
+				
+                document.getElementById("exportVideo169").href = `goexport://?video_id=${safeVideoId}&service=local_beta&no_input=1&resolution=480p&aspect_ratio=16:9&open_folder=true&use_outro=false`;
+				
+		document.getElementById("exportVideo149").href = `goexport://?video_id=${safeVideoId}&service=local_beta&no_input=1&resolution=480p&aspect_ratio=14:9&open_folder=true&use_outro=false`;
+				
+            } catch (err) {
+                console.error("Error loading video:", err);
+            }
+        })();
+    </script>
+	
+	</body></html>
